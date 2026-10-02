@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toko Ikan Hias</title>
+  
+  <!-- CSS dimasukkan di dalam tag style, letaknya di dalam head -->
+  <style>
+    body { font-family: sans-serif; text-align: center; background-color: #E0F7FA; }
+    #tombolPromo { background-color: #007BFF; color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; }
+    #tombolPromo:hover { background-color: #0056b3; }
+    #hasilPromo { font-size: 18px; font-weight: bold; color: #D35400; }
+  </style>
+
+</head>
+<body>
+
+  <h1>Katalog Ikan Hias Air Tawar</h1>
+  <p>Cek promo ikan hias khusus hari ini.</p>
+  <button id="tombolPromo">Lihat Promo Hari Ini</button>
+  <p id="hasilPromo"></p>
+
+  <!-- JavaScript dimasukkan di dalam tag script, letaknya di bagian paling bawah sebelum tutup body -->
+  <script>
+    const tombol = document.getElementById("tombolPromo");
+    const tempatTeks = document.getElementById("hasilPromo");
+
+    tombol.addEventListener("click", function() {
+      tempatTeks.innerHTML = "🎉 Spesial Hari Ini: Diskon 20% untuk Ikan Cupang Halfmoon! 🎉";
+      tombol.style.display = "none"; 
+    });
+  </script>
+
+</body>
+</html>
